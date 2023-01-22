@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ed22c803c8a1949661c3f35ce73563e5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ed22c803c8a1949661c3f35ce73563e5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ed22c803c8a1949661c3f35ce73563e5 = L.map(
+                "map_ed22c803c8a1949661c3f35ce73563e5",
+                {
+                    center: [56.3287, 44.002],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9ed171f7ac28526df18faa71b80e29c5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ed22c803c8a1949661c3f35ce73563e5);
+        
+    
+            var tile_layer_9e51fa4e18db5d6ec7c6d6a1a0595f4f = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ed22c803c8a1949661c3f35ce73563e5);
+        
+    
+            var feature_group_088c2e04f5569a2c033d87993dfe9f58 = L.featureGroup(
+                {}
+            ).addTo(map_ed22c803c8a1949661c3f35ce73563e5);
+        
+    
+            var marker_03a4773ffe0a25680262ea6e0262506c = L.marker(
+                [56.32644962912612, 44.00354884102385],
+                {}
+            ).addTo(feature_group_088c2e04f5569a2c033d87993dfe9f58);
+        
+    
+        var popup_c4f9c2a0d0d1d5193422d9a13022e712 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4f92f8e6a4d5d3b4385883d2540ae32 = $(`<div id="html_e4f92f8e6a4d5d3b4385883d2540ae32" style="width: 100.0%; height: 100.0%;">Кирпичная средневековая крепость с 12 башнями – сейчас здесь располагаются музеи и проходят концерты.</div>`)[0];
+                popup_c4f9c2a0d0d1d5193422d9a13022e712.setContent(html_e4f92f8e6a4d5d3b4385883d2540ae32);
+            
+        
+
+        marker_03a4773ffe0a25680262ea6e0262506c.bindPopup(popup_c4f9c2a0d0d1d5193422d9a13022e712)
+        ;
+
+        
+    
+    
+            marker_03a4773ffe0a25680262ea6e0262506c.bindTooltip(
+                `<div>
+                     Нижегородский кремль
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64cfe0fd9b3f97caf12ec799034dddd3 = L.marker(
+                [56.32851207123402, 43.961195847886906],
+                {}
+            ).addTo(feature_group_088c2e04f5569a2c033d87993dfe9f58);
+        
+    
+        var popup_3605c46b029297e6a019a7f8e4549e37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83beca974c4727de4612c6c7332f7171 = $(`<div id="html_83beca974c4727de4612c6c7332f7171" style="width: 100.0%; height: 100.0%;">Восстановленное здание XIX века с шестью новыми залами, где проходят ярмарки и выставки.</div>`)[0];
+                popup_3605c46b029297e6a019a7f8e4549e37.setContent(html_83beca974c4727de4612c6c7332f7171);
+            
+        
+
+        marker_64cfe0fd9b3f97caf12ec799034dddd3.bindPopup(popup_3605c46b029297e6a019a7f8e4549e37)
+        ;
+
+        
+    
+    
+            marker_64cfe0fd9b3f97caf12ec799034dddd3.bindTooltip(
+                `<div>
+                     Нижегородская ярмарка
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c2a4621ce7dfce63f8b0fd78ac4a77b5 = L.marker(
+                [56.32960538120141, 44.01603576869902],
+                {}
+            ).addTo(feature_group_088c2e04f5569a2c033d87993dfe9f58);
+        
+    
+        var popup_8b5a50ce6858473055de281d83e263b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce60daad4f65641e620341f0f92f3936 = $(`<div id="html_ce60daad4f65641e620341f0f92f3936" style="width: 100.0%; height: 100.0%;">Художественный музей в отреставрированной усадьбе на берегу Волги, в котором проводятся экскурсии.</div>`)[0];
+                popup_8b5a50ce6858473055de281d83e263b6.setContent(html_ce60daad4f65641e620341f0f92f3936);
+            
+        
+
+        marker_c2a4621ce7dfce63f8b0fd78ac4a77b5.bindPopup(popup_8b5a50ce6858473055de281d83e263b6)
+        ;
+
+        
+    
+    
+            marker_c2a4621ce7dfce63f8b0fd78ac4a77b5.bindTooltip(
+                `<div>
+                     Усадьба Рукавишниковых
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_3dc46e175a1895644903a65fbc7978d3 = L.featureGroup(
+                {}
+            ).addTo(map_ed22c803c8a1949661c3f35ce73563e5);
+        
+    
+            var marker_ed0d4f1e492eddf281fc6e525465935a = L.marker(
+                [56.32331171537145, 44.009035250830976],
+                {}
+            ).addTo(feature_group_3dc46e175a1895644903a65fbc7978d3);
+        
+    
+        var popup_d6630496088528a2b612f8fd4570bd2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79fca6e64ac78fb20258f3e0ca4c5bbd = $(`<div id="html_79fca6e64ac78fb20258f3e0ca4c5bbd" style="width: 100.0%; height: 100.0%;">Центральный концертный зал Нижнего Новгорода, расположенный в исторической части города.</div>`)[0];
+                popup_d6630496088528a2b612f8fd4570bd2c.setContent(html_79fca6e64ac78fb20258f3e0ca4c5bbd);
+            
+        
+
+        marker_ed0d4f1e492eddf281fc6e525465935a.bindPopup(popup_d6630496088528a2b612f8fd4570bd2c)
+        ;
+
+        
+    
+    
+            marker_ed0d4f1e492eddf281fc6e525465935a.bindTooltip(
+                `<div>
+                     Юпитер
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6390f827c97d86df6e0ba3a0c51a10d8 = L.marker(
+                [56.32026899046417, 44.00265859295715],
+                {}
+            ).addTo(feature_group_3dc46e175a1895644903a65fbc7978d3);
+        
+    
+        var popup_b67f44228ccfd2909d5fbb001f74c6f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38ec643891461bffe13cbdab71c4503f = $(`<div id="html_38ec643891461bffe13cbdab71c4503f" style="width: 100.0%; height: 100.0%;">Один из самых интересных и популярных театров Нижнего Новгорода, который был основан в 1947 году актерами Анатолием Любанским и его женой Юлией Даминской.</div>`)[0];
+                popup_b67f44228ccfd2909d5fbb001f74c6f5.setContent(html_38ec643891461bffe13cbdab71c4503f);
+            
+        
+
+        marker_6390f827c97d86df6e0ba3a0c51a10d8.bindPopup(popup_b67f44228ccfd2909d5fbb001f74c6f5)
+        ;
+
+        
+    
+    
+            marker_6390f827c97d86df6e0ba3a0c51a10d8.bindTooltip(
+                `<div>
+                     КомедиЯ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_3a73eb76ee457c20dd2f8b34c900560a = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9ed171f7ac28526df18faa71b80e29c5,
+                    "stamenterrain" : tile_layer_9e51fa4e18db5d6ec7c6d6a1a0595f4f,
+                },
+                overlays :  {
+                    "\u0414\u043e\u0441\u0442\u043e\u043f\u0440\u0438\u043c\u0435\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438" : feature_group_088c2e04f5569a2c033d87993dfe9f58,
+                    "\u0422\u0435\u0430\u0442\u0440\u044b" : feature_group_3dc46e175a1895644903a65fbc7978d3,
+                },
+            };
+            L.control.layers(
+                layer_control_3a73eb76ee457c20dd2f8b34c900560a.base_layers,
+                layer_control_3a73eb76ee457c20dd2f8b34c900560a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_ed22c803c8a1949661c3f35ce73563e5);
+            tile_layer_9e51fa4e18db5d6ec7c6d6a1a0595f4f.remove();
+        
+</script>
+</html>
